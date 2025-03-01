@@ -1,0 +1,31 @@
+Queue Implementation Using Linked List
+A Queue is a linear data structure that follows the FIFO (First In, First Out) principle. It can be implemented using a singly linked list, where elements are added at the rear and removed from the front.
+
+Steps to Implement a Queue Using a Linked List
+Define the Node Structure
+
+Each node should contain:
+data (the value of the node).
+next (a pointer to the next node).
+Define the Queue Structure
+
+The queue should maintain:
+front (pointer to the first node).
+rear (pointer to the last node).
+Basic Operations
+
+Enqueue (Insertion at Rear)
+
+Create a new node.
+If the queue is empty, set front and rear to the new node.
+Otherwise, update the next of rear to point to the new node and move rear forward.
+Dequeue (Deletion from Front)
+
+If the queue is empty, return an underflow message.
+Store the front node temporarily.
+Move front to the next node.
+If the queue becomes empty (front == NULL), set rear = NULL.
+Free the memory of the deleted node.
+Display (Traversing the Queue)
+
+Start from front and traverse till rear, printing each element.
